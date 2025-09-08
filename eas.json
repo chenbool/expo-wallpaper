@@ -10,9 +10,6 @@
       "environment": "development",
       "android": {
         "buildType": "apk" // 开发环境生成 APK
-      },
-      "env": {
-        "ENVIRONMENT": "production"
       }
     },
     "preview": {
