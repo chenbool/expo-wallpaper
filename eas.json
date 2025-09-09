@@ -12,11 +12,13 @@
     },
     "preview": {
       "distribution": "internal",
-      "environment": "preview"
+      "environment": "preview",
+      "android": { "buildType": "apk" }
     },
     "production": {
       "autoIncrement": true,
-       "environment": "production"
+       "environment": "production",
+       "android": { "buildType": "apk" }
     },
     "my-profile": {
       "environment": "production"
