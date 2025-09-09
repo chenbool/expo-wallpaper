@@ -8,18 +8,15 @@
       "developmentClient": true,
       "distribution": "internal",
       "android": { "buildType": "apk" },
-      "environment": "development",
-      "autoSubmit": false
+      "environment": "development"
     },
     "preview": {
       "distribution": "internal",
-      "environment": "preview",
-      "autoSubmit": false
+      "environment": "preview"
     },
     "production": {
       "autoIncrement": true,
-      "environment": "production",
-      "autoSubmit": false
+       "environment": "production"
     },
     "my-profile": {
       "environment": "production"
