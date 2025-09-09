@@ -23,7 +23,8 @@
     }
   },
   "submit": {
+    "production": {},  // 保留空对象以满足格式要求（无实际提交配置）
     "development": {},
-    "disabled": true  // 全局禁用提交功能（部分 EAS 版本支持）
+    "preview": {}
   }
 }
