@@ -23,6 +23,7 @@
     }
   },
   "submit": {
-    "development": {}
+    "development": {},
+    "disabled": true  // 全局禁用提交功能（部分 EAS 版本支持）
   }
 }
