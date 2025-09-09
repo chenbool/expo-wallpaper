@@ -7,33 +7,26 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "environment": "development",
       "android": {
         "buildType": "apk" // 开发环境生成 APK
       }
     },
     "preview": {
       "distribution": "internal",
-      "environment": "preview",
       "android": {
         "buildType": "apk" // 开发环境生成 APK
       }
     },
     "production": {
       "autoIncrement": true,
-      "environment": "production",
       "android": {
         "buildType": "apk" // 开发环境生成 APK
       }
     },
     "my-profile": {
-      "environment": "production",
       "android": {
         "buildType": "apk" // 开发环境生成 APK
       }
     }
-  },
-  "submit": {
-    "production": {}
   }
 }
