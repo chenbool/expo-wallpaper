@@ -7,27 +7,22 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      }
+      "android": { "buildType": "apk" },
+      "environment": "development"
     },
     "preview": {
       "distribution": "internal",
-      "android": {
-        "buildType": "apk"
-      }
+      "environment": "preview"
     },
     "production": {
       "autoIncrement": true,
-      "android": {
-        "buildType": "apk" // 生产环境使用 AAB 格式
-      }
+       "environment": "production"
     },
     "my-profile": {
-      "extends": "production", // 继承生产环境配置
-      "android": {
-        "buildType": "apk" // 自定义配置使用 APK
-      }
+      "environment": "production"
     }
+  },
+  "submit": {
+    "production": {}
   }
 }
