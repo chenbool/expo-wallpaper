@@ -16,7 +16,7 @@ const formatUrl = (params) => { // {q, page, category, order}
     let value = key === 'q' ? encodeURIComponent(params[key]) : params[key];
     url += `&${key}=${value}`;
   });
-  console.log('url: ', url);
+  // console.log('url: ', url);
   return url;
 }
 

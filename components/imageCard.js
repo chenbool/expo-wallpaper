@@ -5,7 +5,7 @@ import { Image } from 'expo-image'
 import { theme } from '../constants/theme'
 
 const ImageCard = (props) => {
-    const {item, columns, index} = props;
+    const {item, columns, index, router} = props;
 
     // 检测是否最后一个
     const isLastInRow = () => {
@@ -19,7 +19,10 @@ const ImageCard = (props) => {
     }
 
   return (
-    <Pressable style={[styles.imageWrapper, !isLastInRow() && styles.spacing]}>
+    <Pressable 
+     onPress={() => router.push({pathname: 'home/image', params: {...item}})}
+      style={[styles.imageWrapper, !isLastInRow() && styles.spacing]}
+    >
         <Image
             style={[styles.image, getImageHeight()]}
             source={item?.webformatURL}

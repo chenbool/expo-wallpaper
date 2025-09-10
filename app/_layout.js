@@ -1,25 +1,49 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Stack } from 'expo-router'
+import {
+  BottomSheetModalProvider,
+} from '@gorhom/bottom-sheet';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+// import { SplashScreen } from 'expo-splash-screen';
+
 
 const Layout = () => {
+
+  // useEffect(() => {
+  //   SplashScreen.hideAsync();
+  // }, []);
+
   return (
-    <Stack>
-      <Stack.Screen
-        name="index"
-        options={{
-          headerShown: false
-        }}
-      />
+    <GestureHandlerRootView style={{flex: 1}}>
+      <BottomSheetModalProvider>
+        <Stack>
+          <Stack.Screen
+            name="index"
+            options={{
+              headerShown: false
+            }}
+          />
 
-      <Stack.Screen
-        name="home/index"
-        options={{
-          headerShown: false
-        }}
-      />
+          <Stack.Screen
+            name="home/index"
+            options={{
+              headerShown: false
+            }}
+          />
 
-    </Stack>
+          <Stack.Screen
+            name="home/image"
+            options={{
+              headerShown: false,
+              presentation: 'transparentModal',
+              animation: 'fade'
+            }}
+          />
+
+        </Stack>
+      </BottomSheetModalProvider>
+    </GestureHandlerRootView>
   )
 }
 

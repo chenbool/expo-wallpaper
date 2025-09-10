@@ -6,7 +6,7 @@ import { getColumnCount, wp } from '../helpers/common'
 
 const ImageGrid = (props) => {
         // 接受参数
-    const {images} = props;
+    const {images, router} = props;
     // 根据屏幕尺寸 设置 个数
     const columns = getColumnCount();
   return (
@@ -17,7 +17,7 @@ const ImageGrid = (props) => {
             data={images}
             numColumns={columns}
             initialNumToRender={1000}
-            renderItem={({ item, index }) => <ImageCard item={item} columns={columns} index={index}/>}
+            renderItem={({ item, index }) => <ImageCard router={router} item={item} columns={columns} index={index}/>}
             estimatedItemSize={200}
             contentContainerStyle={styles.listContainerStyle}
         />
